@@ -46,9 +46,6 @@ struct ContentView: View {
   @State var nol8 = 0
   @State var all = 0
   @State var isActive : Bool = false
-  @State var active = false
-
-
   @State var hide = false
     var body: some View {
       
@@ -572,7 +569,6 @@ struct ContentView: View {
       nol4 += 1
       nol7 += 1
       all += 1
-
     }
     else  {
       self.buttonA = true
@@ -601,13 +597,8 @@ struct ContentView: View {
       five += 1
       all += 1
     }
-    if active {
-      all += 9
-    }
   }
 }
-
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
