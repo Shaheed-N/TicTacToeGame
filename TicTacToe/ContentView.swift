@@ -88,7 +88,7 @@ struct ContentView: View {
                 RoundedRectangle(cornerRadius: 20)
                   .frame(width:330 , height: 5)
                   .foregroundColor(.orange)
-                  .offset(y: -110)
+                  .offset(y: -109)
                   .onAppear {
                       DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
                           withAnimation {
